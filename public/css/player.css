@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+}
+.playerContainer{
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    height: 15%;
+    background-color: black;
+}
+.playerContainer img{
+    display: none;
+    border-radius:10px;
+    object-fit:cover;
+    margin:15px;
+    width:70px;
+    height:70px;
+}
+.playerContainer #player_title{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    position:absolute;
+    top:17px;
+    left:100px;
+}
+.playerContainer #player_content{
+    width:240px;
+    font-size:13.8px;
+    position:absolute;
+    top:50px;
+    left:100px;
+    color:white;
+}
+.playerContainer #current_time{
+    color:white;
+    position:absolute;
+    left:370px;
+    top:60px;
+}
+.playerContainer #total_time{
+    color:white;
+    position:absolute;
+    right:340px;
+    top:60px;
+}
+.playerContainer #forw{
+    color:white;
+    height:28px;
+    width:28px;
+    font-size:11px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.0);
+    border:1px solid white;
+    position:absolute;
+    top:17px;
+    right:540px;
+}
+.playerContainer #forw i{
+    margin-left:2px;
+    margin-top:1px;
+}
+#forw:active{
+    transform: translateY(2px);
+}
+.playerContainer #back{
+    color:white;
+    height:28px;
+    width:28px;
+    font-size:11px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.0);
+    border:1px solid white;
+    position:absolute;
+    top:17px;
+    left:535px;
+}
+.playerContainer #back i{
+    margin-right:2px;
+    margin-top:1px;
+}
+#back:active{
+    transform: translateY(2px);
+}
+.play{
+    position: fixed;
+    bottom: 53px;
+    left: 49%;
+    color:white;
+    background-color: black;
+    border: solid 1px wheat;
+    padding-left: 8px;
+    padding-top: 2px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+.play:active{
+    transform: translateY(2px);
+}
+.pause{
+    display: none;
+    position: fixed;
+    bottom: 53px;
+    left: 49%;
+    color:white;
+    background-color: black;
+    border: 1px solid white;
+    padding-left: 5px;
+    padding-top: 2px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+.pause:active{
+    transform: translateY(2px);
+}
+.seek{
+    position: fixed;
+    bottom: 25px;
+    left: 31%;
+    -webkit-appearance: none;
+    width: 40%;
+    height: 5px;
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 0%, #fff 0%, #fff 100%);
+    border-radius: 5px;
+}
+.seek::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background:#07ff76;
+    cursor: pointer;
+  }
+.vol{
+    position: fixed;
+    bottom: 25px;
+    right: 3%;
+    -webkit-appearance: none;
+    width: 10%;
+    height: 5px;
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 0%, #fff 0%, #fff 100%);
+    border-radius: 5px;
+}
+.vol::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgb(76, 172, 175);
+    cursor: pointer;
+}
+.v1{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: 14%;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+.v2{
+    display: none;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: 14%;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: green;
+    }
+    .playerContainer{
+        position: fixed;
+        bottom: 0px;
+        width:100%;
+        height: 10%;
+        background-color: black;
+    }
+    .seek{
+        position: fixed;
+        bottom: 25px;
+        left: 25%;
+        -webkit-appearance: none;
+        width: 45%;
+        height: 5px;
+        background: linear-gradient(to right, #82CFD0 0%, #82CFD0 0%, #fff 0%, #fff 100%);
+        border-radius: 5px;
+    }
+    .seek::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+  }

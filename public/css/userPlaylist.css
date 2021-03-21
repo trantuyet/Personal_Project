@@ -1,0 +1,93 @@
+body{
+    margin:0px;
+}
+.mainContainer{
+    width: 100%;
+    height: 567px;
+    background: linear-gradient(to bottom, #000000 -10%, #16794b 100%);
+    overflow: auto;
+}
+#navbar{
+    margin-bottom: 10px;
+}
+#navbar .active{
+    border-bottom:2px solid #54ff88;
+}
+#navbar a{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight:bolder;
+    letter-spacing:2px;
+}
+.profile{
+    position:absolute;
+    left:0px;
+}
+.profile button{
+    color:white;
+    background-color:#22c153;
+    height:40px;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px
+}
+.search{
+    text-align:right;
+    font-size:20px;
+    position:fixed;
+    background-color:rgba(0,0,0,0);
+    color:white;
+    border:none;
+    border-bottom:2px solid #54ff88;
+    right:25px;
+    top:23px;
+    width:200px;
+}
+table{
+    margin-left:200px;
+    margin-top:50px;
+}
+table td{
+    padding:8px;
+    color: white;
+}
+table td img{
+    height:65px;
+    width:65px;
+    object-fit:cover;
+}
+table td{
+    color: white;
+}
+#td1{
+    font-size:16px;
+    text-align:end;
+    width:30px;
+}
+#td2{
+    text-align:center;
+    width:80px;
+}
+#td3{
+    width:700px;
+}
+#td3 p{
+    font-size:12px;
+}
+
+#td4{
+    text-align:end;
+    width:100px;
+}
+#td5{
+    width:100px;
+}
+tr:hover{
+    background-color:#5a5656;
+}
+#td5 button{
+    background-color:rgba(0,0,0,0);
+    color:white;
+    border:none;
+    font-size:20px;
+}

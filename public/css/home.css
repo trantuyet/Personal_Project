@@ -1,0 +1,124 @@
+body{
+    background-repeat: no-repeat;
+}
+.mainContainer{
+    width: 100%;
+    height: 567px;
+    background: linear-gradient(to bottom, #000000 -10%, #62c0ec 100%);
+    overflow:auto;
+}
+#navbar{
+    margin-bottom: 10px;
+}
+#navbar .active{
+    border-bottom:2px solid #54ff88;
+}
+#navbar a{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight:bolder;
+    letter-spacing:2px;
+    border-bottom-color: #a30a2d;
+}
+[class*="col-"] img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left:12%;
+    margin-top:5%;
+}
+[class*="col-"]{
+    text-align: center;
+    margin-bottom:40px;
+}
+[class*="col-"] div.card{
+    width:200px; 
+    height: 220px;
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 15px;
+}
+[class*="col-"] h4{
+    margin-top:-5px;
+}
+h2{
+    color: white;
+}
+[class*="col-"] div#mood{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
+    width:200px; 
+    height: 220px;
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 15px;
+}
+[class*="col-"] div#mood img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
+    height: 75%;
+    width: 100%;
+    margin-left:0%;
+    margin-top:0%;
+}
+[class*="card-img-overlay"]{
+    display:none;
+    margin-top:10px;
+    width:90%; 
+    height:80%; 
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.7);
+}
+[class*="card-img-overlay"] button{
+    background-color:rgba(0,0,0,0);
+    border:none;
+    color:white;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:40px;
+}
+[class*="card-img-overlay"] button i{
+    font-size:35px;
+    
+}
+#sing:hover [class*="card-img-overlay"]{
+    display:block;
+}
+[class*="col-"] div#sing{
+    text-align:center;
+    border:none;
+    background-color:rgba(0,0,0,0.0);
+}
+[class*="col-"] div#sing img{
+    height:80%;
+    width:90%;
+    margin-left:0px;
+}
+.spause{
+    margin-left:50px;
+}
+.splay{
+    margin-left: 50px;
+}
+
+form{
+    width:224.5px;
+}
+.profile{
+    position:absolute;
+    left:0px;
+}
+.profile button{
+    color:white;
+    background-color:#22c153;
+    height:40px;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px
+}
