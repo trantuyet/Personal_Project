@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 
 class homeController extends Controller
@@ -34,7 +35,6 @@ class homeController extends Controller
         return view('landing',['slider'=>$slider, 'landing1'=>$landing1,
             'landing2'=>$landing2, 'navDisplay'=>$navDisplay, 'userName'=>$userName]);
     }
-
 
     function signup(Request $request){
         $email = request('email');
@@ -89,8 +89,6 @@ class homeController extends Controller
             'music3'=>$music3,
             'user'=>$user]);
     }
-
-
 
     function discover(Request $request){
         $userName = $request->session()->get('user_name');
