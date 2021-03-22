@@ -29,7 +29,7 @@ class homeController extends Controller
         if($user->count()==0){
             return redirect()->back()->with('alert', 'Deleted!');
         }
-        $userSession = $request->session()->put('user_name',$user[0]->name);
+       // $userSession = $request->session()->put('user_name',$user[0]->name);
         $request->session()->put('user_id',$user[0]->id);
         $userName = $request->session()->get('user_name');
         return view('landing',['slider'=>$slider, 'landing1'=>$landing1,
@@ -62,7 +62,7 @@ class homeController extends Controller
     function home(Request $request){
         $music1 = DB::table('collection_title')
             ->join('collection','collection.collection_title_id','=','collection_title.collection_title_id')
-            ->join('artist','collection.artist_id','=','Artist.artist_id')
+            ->join('artist','collection.artist_id','=','artist.Artist_id')
             ->select('collection_title.collection_name','artist.p_name','artist.Artist_name','artist.Artist_image')
             ->where('collection_title.collection_title_id', '=', 1)
             ->get();
